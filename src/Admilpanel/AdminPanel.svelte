@@ -1,55 +1,6 @@
 <script>
-    import { onMount } from 'svelte';
-    import { Line, Bar } from 'svelte-chartjs';
-    import { 
-      Chart as ChartJS,
-      CategoryScale,
-      LinearScale,
-      PointElement,
-      LineElement,
-      BarElement,
-      Title,
-      Tooltip,
-      Legend
-    } from 'chart.js';
   
-    ChartJS.register(
-      CategoryScale,
-      LinearScale,
-      PointElement,
-      LineElement,
-      BarElement,
-      Title,
-      Tooltip,
-      Legend
-    );
-  
-    const monthlyData = {
-      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-      datasets: [{
-        data: [400, 300, 200, 278, 189, 239, 349, 430, 291, 500, 200, 350],
-        borderColor: '#8884d8',
-        tension: 0.1
-      }]
-    };
-  
-    const balanceData = {
-      labels: ['1', '2', '3', '4', '5', '6', '7'],
-      datasets: [{
-        data: [4000, 3000, 5000, 2780, 1890, 2390, 3490],
-        borderColor: '#8884d8',
-        tension: 0.1
-      }]
-    };
-  
-    const barChartData = {
-      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-      datasets: [{
-        data: [400, 300, 200, 278, 189, 239, 349, 430, 291, 500, 200, 350],
-        backgroundColor: '#8884d8'
-      }]
-    };
-  
+   
     let searchQuery = '';
   </script>
   
