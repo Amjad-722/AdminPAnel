@@ -57,7 +57,7 @@
   
     <aside class="w-64 bg-white shadow-md">
       <div class="p-4">
-        <h1 class="text-2xl font-bold text-purple-600">VENUS</h1>
+        <h1 class="text-2xl font-bold text-purple-600">AMJAD</h1>
         <p class="text-sm text-gray-500">DASHBOARD</p>
       </div>
       <nav class="mt-6">
@@ -80,7 +80,7 @@
           </svg>
           Library
         </a>
-        <!-- Add more navigation items here -->
+       
       </nav>
       <div class="absolute bottom-0 w-64 p-4">
         <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">
@@ -116,14 +116,5 @@
         </div>
       </header>
   
-      <!-- Dashboard Content -->
-      <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-        <!-- Stats Grid -->
-        
-  
-  
-  
-       
-      </div>
     </main>
   </div>
