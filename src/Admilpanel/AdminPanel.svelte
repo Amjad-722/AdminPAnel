@@ -36,10 +36,110 @@
     }
   ];
 </script>
-
 <div class="flex h-screen bg-gray-100">
   <aside class="w-64 bg-white shadow-md">
-    <!-- Sidebar content omitted for brevity -->
+    <div class="p-4">
+      <h1 class="text-2xl font-bold text-purple-600">AMJAD</h1>
+      <p class="text-sm text-gray-500">DASHBOARD</p>
+    </div>
+    <nav class="mt-6">
+      <a href="#" class="block py-2 px-4 bg-purple-600 text-white">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline-block mr-2 h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
+          <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
+        </svg>
+        Dashboard
+      </a>
+      <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline-block mr-2 h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        Activity
+      </a>
+      <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline-block mr-2 h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"
+          />
+        </svg>
+        Library
+      </a>
+      <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline-block mr-2 h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"
+          />
+        </svg>
+        Schedules
+      </a>
+      <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline-block mr-2 h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"
+          />
+        </svg>
+        Payouts
+      </a>
+      <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline-block mr-2 h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"
+          />
+        </svg>
+        Setting
+      </a>
+    </nav>
+    <div class="absolute bottom-0 w-64 p-4">
+      <a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="inline-block mr-2 h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        Log Out
+      </a>
+    </div>
   </aside>
 
   <main class="flex-1 overflow-y-auto">
