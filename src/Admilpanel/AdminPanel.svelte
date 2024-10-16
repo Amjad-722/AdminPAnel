@@ -4,7 +4,7 @@
   const Card = [
     {
       image: "https://www.gemoo-resource.com/images/post-different-size-photos-on-instagram-0.png",
-      Name: "NUll threater Impover",
+      Name: "NUll threater Impover ",
       Date: "THU, OCT 24 2024, 11:00 AM",
       Sender: "Start from",
       Price: "$34.00",
@@ -27,7 +27,7 @@
       Stock: "Only 2 left!"
     },
     {
-      image: "https://www.gemoo-resource.com/images/post-different-size-photos-on-instagram-0.png",
+      image: "https://images.unsplash.com/photo-1597264102914-01be2a7f57a3?q=80&w=3032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       Name: "NUll threater Impover",
       Date: "THU, OCT 24 2024, 11:00 AM",
       Sender: "Start from",
@@ -95,18 +95,18 @@
 
     <div class="flex flex-row flex-wrap justify-center gap-x-4 gap-y-6 mt-8">
       {#each Card as card}
-        <div class="w-1/5 border-2 border-gray-900 rounded-2xl mb-4">
-          <div class="w-full bg-blue-500 rounded-t-2xl">
+        <div class="w-1/5 border flex flex-col border-gray-900 rounded-2xl mb-4">
+          <div class="w-full bg-blue-950 rounded-t-2xl">
             <img src={card.image} class="h-[200px] w-full object-contain" />
           </div>
-          <p class="text-[22px] font-medium text-gray-800 mt-2 leading-1 pl-6">
+          <p class="text-[20px] font-medium text-gray-800 mt-2 leading-1 pl-6">
             {card.Name}
           </p>
           <p class="text-[20px] font-medium pt-10 pl-6 leading-1 text-gray-800">
             {card.Date}
           </p>
           <p class="pl-6 text-sm text-gray-500 pt-2">{card.Sender}</p>
-          <div class="flex flex-row pl-6 mt-1.5 pb-6 gap-20">
+          <div class="flex flex-row mt-auto pl-6  pb-6 gap-20">
             <span class="text-2xl py-1.5 font-bold">{card.Price}</span>
             <span
               class="text-xl font-semibold bg-gray-200 text-red-600 items-center rounded-lg px-4 py-1"
@@ -117,5 +117,7 @@
         </div>
       {/each}
     </div>
+
+  
   </main>
 </div>
