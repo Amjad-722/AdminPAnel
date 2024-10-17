@@ -1,6 +1,19 @@
 <script>
+  import Dropdown from "../Dropdown.svelte";
+
   let searchQuery = "";
 
+  let isDropdownVisible = false;
+
+
+function toggleDropdown() {
+  isDropdownVisible = !isDropdownVisible;
+}
+
+
+function hideDropdown() {
+  isDropdownVisible = false;
+}
   const Card = [
     {
       image: "https://www.gemoo-resource.com/images/post-different-size-photos-on-instagram-0.png",
@@ -35,6 +48,7 @@
       Stock: "Only 2 left!"
     }
   ];
+  
   const stats = [
     {
       title: "Spent this month",
@@ -53,8 +67,8 @@
     }
   ];
 
-
-  function dipaly () { display:hidden;}
+let isVisible = true;
+  
 </script>
 <div class="flex h-screen bg-gray-100">
   <aside class="w-64 bg-white shadow-md">
@@ -246,18 +260,9 @@
     </div>
 
     <div>
-      <div class="flex flex-row justify-around">
-        <div> <input type="search" placeholder="Search" bind:value={searchQuery} class="w-full pl-10 pr-4 py-2  rounded-full border focus:outline-none focus:border-purple-500"></div>
-        <div class="group   ">
-          <span class="text-[20px] font-medium">
-            group
-          </span>
-          <ul onclick="dipaly" class="flex-col absolute focus:group-disabled bg-white p-4 rounded-lg mt-2 text-[20px] font-medium gap-2  hidden group-hover:flex ">
-           <li>List View</li>
-           <li> Gallery View</li>
-           <li> Calender view</li>
-          </ul>
-        </div>
+     
+      <div>
+        <Dropdown/>
       </div>
       <div class="flex flex-row flex-wrap justify-center gap-x-4 gap-y-6 mt-8">
         {#each Card as card}
