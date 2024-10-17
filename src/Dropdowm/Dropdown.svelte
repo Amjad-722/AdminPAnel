@@ -103,7 +103,7 @@
             id="email"
             name="notification-method"
             type="radio"
-            class="appearance-none h-7 w-7 border-2 bg-white rounded-full checked:bg-white checked:border-4 checked:border-indigo-600"
+            class="appearance-none size-6 border-2 bg-white rounded-full checked:bg-white checked:border-4   checked:border-indigo-600"
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"
