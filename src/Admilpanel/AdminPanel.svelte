@@ -1,5 +1,5 @@
 <script>
-  import Dropdown from "../Dropdown.svelte";
+  import Dropdown from "../Dropdowm/Dropdown.svelte";
 
   let searchQuery = "";
 
@@ -59,6 +59,11 @@ function hideDropdown() {
       title: "Revenue this month",
       value: "$1,200.75",
       icon: "M9 14l2-2m0 0l2 2m-2-2v6m5-6l2-2m0 0l2 2m-2-2V8m-5 2V3m-2 0V8m-2 2h2v5m0 0V8h2",
+    },
+    {
+      title: "Active users",
+      value: "3,540",
+      icon: "M12 12c2.121 0 3.764-1.641 4-3.6V8c0-.941-2.872-2.6-4-2.6S8 7.059 8 8v.4c.236 1.959 1.879 3.6 4 3.6z",
     },
     {
       title: "Active users",
@@ -226,14 +231,14 @@ let isVisible = true;
         </div>
       </div>
     </header>
-    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+    <div class="max-w-fullxl mx-auto py-6 px-16 ">
      
-      <div class="grid grid-cols-1 gap-5 sm:grid-cols-3 mb-5">
+      <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 mb-5">
         {#each stats as stat}
           <div class="bg-white overflow-hidden shadow rounded-lg">
             <div class="p-5">
               <div class="flex items-center">
-                <div class="flex-shrink-0">
+                <div class="flex-shrink-0"> 
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-6 w-6 text-gray-400"
@@ -264,7 +269,7 @@ let isVisible = true;
       <div>
         <Dropdown/>
       </div>
-      <div class="flex flex-row flex-wrap justify-center gap-x-4 gap-y-6 mt-8">
+      <div class="flex flex-row flex-wrap justify-center  gap-x-16 gap-y-6 mt-8">
         {#each Card as card}
           <div class="w-1/5 border flex flex-col border-gray-900 rounded-2xl mb-4">
             <div class="w-full bg-blue-950 rounded-t-2xl">
