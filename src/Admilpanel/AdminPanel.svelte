@@ -35,6 +35,26 @@
       Stock: "Only 2 left!"
     }
   ];
+  const stats = [
+    {
+      title: "Spent this month",
+      value: "$682.5",
+      icon: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
+    },
+    {
+      title: "Revenue this month",
+      value: "$1,200.75",
+      icon: "M9 14l2-2m0 0l2 2m-2-2v6m5-6l2-2m0 0l2 2m-2-2V8m-5 2V3m-2 0V8m-2 2h2v5m0 0V8h2",
+    },
+    {
+      title: "Active users",
+      value: "3,540",
+      icon: "M12 12c2.121 0 3.764-1.641 4-3.6V8c0-.941-2.872-2.6-4-2.6S8 7.059 8 8v.4c.236 1.959 1.879 3.6 4 3.6z",
+    }
+  ];
+
+
+  function dipaly () { display:hidden;}
 </script>
 <div class="flex h-screen bg-gray-100">
   <aside class="w-64 bg-white shadow-md">
@@ -192,31 +212,79 @@
         </div>
       </div>
     </header>
-
-    <div class="flex flex-row flex-wrap justify-center gap-x-4 gap-y-6 mt-8">
-      {#each Card as card}
-        <div class="w-1/5 border flex flex-col border-gray-900 rounded-2xl mb-4">
-          <div class="w-full bg-blue-950 rounded-t-2xl">
-            <img src={card.image} class="h-[200px] w-full object-contain" />
+    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+     
+      <div class="grid grid-cols-1 gap-5 sm:grid-cols-3 mb-5">
+        {#each stats as stat}
+          <div class="bg-white overflow-hidden shadow rounded-lg">
+            <div class="p-5">
+              <div class="flex items-center">
+                <div class="flex-shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-gray-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={stat.icon} />
+                  </svg>
+                </div>
+                <div class="ml-5 w-0 flex-1">
+                  <dl>
+                    <dt class="text-sm font-medium text-gray-500 truncate">{stat.title}</dt>
+                    <dd class="flex items-baseline">
+                      <div class="text-2xl font-semibold text-gray-900">{stat.value}</div>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
           </div>
-          <p class="text-[20px] font-medium text-gray-800 mt-2 leading-1 pl-6">
-            {card.Name}
-          </p>
-          <p class="text-[20px] font-medium pt-10 pl-6 leading-1 text-gray-800">
-            {card.Date}
-          </p>
-          <p class="pl-6 text-sm text-gray-500 pt-2">{card.Sender}</p>
-          <div class="flex flex-row mt-auto pl-6  pb-6 gap-20">
-            <span class="text-2xl py-1.5 font-bold">{card.Price}</span>
-            <span
-              class="text-xl font-semibold bg-gray-200 text-red-600 items-center rounded-lg px-4 py-1"
-            >
-              {card.Stock}
-            </span>
-          </div>
-        </div>
-      {/each}
+        {/each}
+      </div>
     </div>
+
+    <div>
+      <div class="flex flex-row justify-around">
+        <div> <input type="search" placeholder="Search" bind:value={searchQuery} class="w-full pl-10 pr-4 py-2  rounded-full border focus:outline-none focus:border-purple-500"></div>
+        <div class="group   ">
+          <span class="text-[20px] font-medium">
+            group
+          </span>
+          <ul onclick="dipaly" class="flex-col absolute focus:group-disabled bg-white p-4 rounded-lg mt-2 text-[20px] font-medium gap-2  hidden group-hover:flex ">
+           <li>List View</li>
+           <li> Gallery View</li>
+           <li> Calender view</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-row flex-wrap justify-center gap-x-4 gap-y-6 mt-8">
+        {#each Card as card}
+          <div class="w-1/5 border flex flex-col border-gray-900 rounded-2xl mb-4">
+            <div class="w-full bg-blue-950 rounded-t-2xl">
+              <img src={card.image} class="h-[200px] w-full object-contain" />
+            </div>
+            <p class="text-[20px] font-medium text-gray-800 mt-2 leading-1 pl-6">
+              {card.Name}
+            </p>
+            <p class="text-[20px] font-medium pt-10 pl-6 leading-1 text-gray-800">
+              {card.Date}
+            </p>
+            <p class="pl-6 text-sm text-gray-500 pt-2">{card.Sender}</p>
+            <div class="flex flex-row mt-auto pl-6  pb-6 gap-20">
+              <span class="text-2xl py-1.5 font-bold">{card.Price}</span>
+              <span
+                class="text-xl font-semibold bg-gray-200 text-red-600 items-center rounded-lg px-4 py-1"
+              >
+                {card.Stock}
+              </span>
+            </div>
+          </div>
+        {/each}
+      </div>
+    </div>
+    
 
   
   </main>
