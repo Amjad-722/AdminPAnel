@@ -124,6 +124,11 @@
         </li>
       </ul>
     </div>
+    
+      <div class="animate-scale-move">
+          <div class="size-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+    
+  </div>
   </div>
 </div>
 
