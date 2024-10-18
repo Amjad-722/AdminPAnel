@@ -125,11 +125,32 @@
       </ul>
     </div>
     
-      <div class="animate-scale-move">
+      <div  class="flex items-center justify-center">
+        <div class="animate-scale-move w-[48px]">
           <div class="size-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-    
+
   </div>
+      </div>
   </div>
 </div>
+
+<style>
+  @keyframes scaleAndMove {
+    0% {
+      transform: scale(0.75) translateX(0);
+    }
+    50% {
+      transform: scale(1) translateX(0);
+    }
+    100% {
+      transform: scale(0.75) translateX(0);
+    }
+  }
+
+  .animate-scale-move {
+    animation: scaleAndMove 2s ease-in-out infinite;
+  }
+</style>
+
 
 
