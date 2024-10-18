@@ -27,14 +27,22 @@
 
     <!-- Dropdown Menu -->
     <div class="">
-      <span
-        class="text-[20px] font-medium cursor-pointer"
-        
-      >
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 z-1 p-1 bg-slate-300 rounded-xl hover:border-gray-300" on:click={toggleDropdown}>
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
-      </svg>
-      
+      <span class="text-[20px] font-medium cursor-pointer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-8 z-1 p-1 bg-slate-300 rounded-xl hover:border-gray-300"
+          on:click={toggleDropdown}
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"
+          />
+        </svg>
       </span>
 
       <!-- Dropdown list -->
@@ -103,7 +111,7 @@
             id="email"
             name="notification-method"
             type="radio"
-            class="appearance-none size-6 border-2 bg-white rounded-full checked:bg-white checked:border-4   checked:border-indigo-600"
+            class="appearance-none size-6 border-2 bg-white rounded-full checked:bg-white checked:border-4 checked:border-indigo-600"
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -124,13 +132,14 @@
         </li>
       </ul>
     </div>
-    
-      <div  class="flex items-center justify-center">
-        <div class="animate-scale-move w-[48px]">
-          <div class="size-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
 
-  </div>
+    <div class="flex items-center justify-center">
+      <div class="animate-scale-move w-[48px]">
+        <div
+          class="size-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"
+        ></div>
       </div>
+    </div>
   </div>
 </div>
 
@@ -151,6 +160,3 @@
     animation: scaleAndMove 2s ease-in-out infinite;
   }
 </style>
-
-
-
