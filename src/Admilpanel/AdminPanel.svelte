@@ -12,6 +12,7 @@
     Tooltip,
     Legend
   } from 'chart.js';
+  import Loginfrom from "../loginFrom/loginfrom.svelte";
 
   ChartJS.register(
     CategoryScale,
@@ -303,6 +304,10 @@ let isVisible = true;
           <Line data={monthlyData} options={{ responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }} />
         </div>
       </div>
+    </div>
+
+    <div>
+      <Loginfrom/>
     </div>
    
 
