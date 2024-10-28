@@ -1,6 +1,7 @@
 
   <script>
   import AdminPanel from "../Admilpanel/AdminPanel.svelte";
+  import Loginfrom from "../loginFrom/loginfrom.svelte";
 
 
 
@@ -8,4 +9,5 @@
 
   <main>
     <AdminPanel/>
+    <Loginfrom/>
   </main>
