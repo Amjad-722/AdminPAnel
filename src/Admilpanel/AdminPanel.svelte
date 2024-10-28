@@ -22,7 +22,7 @@
       price: "$34.00",
       stock: "Only 2 left!",
     },
-    // Add other cards as needed
+   
   ];
 
   export let stats = [
@@ -33,12 +33,13 @@
 
   let searchQuery = "";
   export let signupQuery = "Sign In";
-
-  
   let showLoginForm = false;
 
-  
   function toggleLoginForm() {
+    showLoginForm = !showLoginForm;
+  }
+
+  function closeLoginForm() {
     showLoginForm = !showLoginForm;
   }
 </script>
@@ -69,7 +70,7 @@
     </div>
   </aside>
 
-  <main class="flex-1 overflow-y-auto">
+  <div class="flex-1 overflow-y-auto">
     <header class="bg-white shadow-sm">
       <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <div class="w-1/3">
@@ -129,5 +130,5 @@
         </div>
       {/each}
     </div>
-  </main>
+</div>
 </div>
